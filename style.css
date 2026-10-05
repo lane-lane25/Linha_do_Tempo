@@ -409,18 +409,11 @@ button {
 }
 
 .hero h1 {
-    font-size: clamp(2.7rem, 7vw, 5rem);
-
-    margin-bottom: 15px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #ffffff,
-            #8ccaff
-        );
-
+    background: linear-gradient(135deg, #7ec8ff, #4da6ff);
     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 
     -webkit-text-fill-color: transparent;
 }
