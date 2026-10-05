@@ -1,51 +1,286 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Linha do Tempo 💙</title>
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
-    
+
+    <title>Entre Nós</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div id="welcome-screen">
-        <div class="welcome-card">
-            <span class="welcome-icon">💙</span>
-            <h1>Oieeeeeeeeeeeeeeeeeeeee meu bem💙</h1>
-            <div class="personal-message">
-                <p>Eu sei o quanto você ficou triste por ter perdido nossas conversas sem querer...</p>
-                <p>Mas eu queria te lembrar que o que a gente viveu não está guardado só em um aplicativo, mas aqui dentro de mim também. Eu anotei cada detalhe importante, cada data e cada sentimento desde o nosso primeiro 'oi'.</p>
-                <p>Criei este site para que você se lembre que nossa história nunca poderá ser apagada ou perdida, mesmo que você já tenha recuperado as conversas. Ela está aqui, salva pra sempre, pra você ler quando sentir saudade.</p>
-                <p>Eu sei que não é nada de mais, mas espero que goste dessa pequena 'uva passa', e que possa mostrar um poquinho do amor que eu sinto por você.</p>
-                <p>Espero que você goste dessa surpresa. Eu te amo muito meu amor💙</p>
-            </div>
-            <button id="start-button">Ver nossa história</button>
-        </div>
-    </div>
+    <!-- CAPA -->
+    <section id="welcome-screen">
 
-    <div id="main-content" class="hidden" style="display: none;">
-        <header>
-            <h1>Nossa História 💙</h1>
-            <p>"Nenhuma conversa apagada sem querer pode apagar o que a gente viveu e o que ainda vamos construir juntos."</p>
-            <p class="subtitle-desc">Cada data, cada conversa e cada pequeno detalhe guardado com todo o amor do mundo.</p>
+        <div class="welcome-content">
+
+            <div class="welcome-heart">♥</div>
+
+            <p class="welcome-small">uma história de</p>
+
+            <h1>Alane & Victor</h1>
+
+            <p class="welcome-subtitle">Nossa História</p>
+
+            <span class="welcome-date">26.04.2026</span>
+
+            <button id="enter-btn" class="enter-btn">
+                Entrar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="main-content" style="display: none;">
+
+        <!-- TOPO -->
+        <header class="top-bar">
+
+            <div class="logo">
+                <span class="logo-heart">♥</span>
+                <span>Nossa História</span>
+            </div>
+
+            <div class="top-actions">
+
+                <button id="add-memory-btn" title="Adicionar memória">
+                    <span>＋</span>
+                    <span class="button-text">Memória</span>
+                </button>
+
+                <button id="theme-toggle-btn" title="Mudar tema">
+                    ☾
+                </button>
+
+            </div>
+
         </header>
 
-        <div class="search-container">
-            <input type="text" id="searchInput" class="search-input" placeholder="Pesquise por uma data (ex: 26/04 ou namoro)...">
-        </div>
 
-        <div class="timeline" id="timelineContainer">
+        <!-- HERO -->
+        <section class="hero">
+
+            <p class="hero-small">desde o começo...</p>
+
+            <h1>Pequenos momentos,<br>uma grande história.</h1>
+
+            <p>
+                Algumas das lembranças que fizeram parte
+                da nossa história e que eu quero guardar
+                para sempre.
+            </p>
+
+        </section>
+
+
+        <!-- CARTA -->
+        <section class="letter-section">
+
+            <div class="letter-card">
+
+                <span class="section-label">uma pequena carta</span>
+
+                <h2>Para você, Victor 💙</h2>
+
+                <p>
+                    Às vezes eu paro para pensar em como tantas
+                    pequenas coisas acabaram se tornando momentos
+                    tão importantes para mim.
+                </p>
+
+                <p>
+                    Uma conversa, uma música, uma ligação, uma
+                    mensagem... coisas que talvez parecessem
+                    simples naquele momento, mas que hoje fazem
+                    parte da nossa história.
+                </p>
+
+                <p>
+                    Esse cantinho é uma forma de guardar um
+                    pouquinho de tudo isso. Porque eu quero
+                    lembrar de como tudo começou e de cada
+                    pedacinho que fez a nossa história ser
+                    tão especial.
+                </p>
+
+                <p class="letter-signature">
+                    Com carinho,<br>
+                    Alane 💙
+                </p>
+
             </div>
 
+        </section>
+
+
+        <!-- CONTADOR -->
+        <section class="counter-section">
+
+            <div class="counter-card">
+
+                <span class="section-label">e o tempo continua...</span>
+
+                <h2>Desde 26 de abril de 2026 💙</h2>
+
+                <div class="counter-display">
+
+                    <div class="counter-unit">
+                        <span id="counter-days" class="counter-number">0</span>
+                        <span class="counter-text">dias</span>
+                    </div>
+
+                    <span class="counter-separator">:</span>
+
+                    <div class="counter-unit">
+                        <span id="counter-hours" class="counter-number">0</span>
+                        <span class="counter-text">horas</span>
+                    </div>
+
+                    <span class="counter-separator">:</span>
+
+                    <div class="counter-unit">
+                        <span id="counter-minutes" class="counter-number">0</span>
+                        <span class="counter-text">minutos</span>
+                    </div>
+
+                    <span class="counter-separator">:</span>
+
+                    <div class="counter-unit">
+                        <span id="counter-seconds" class="counter-number">0</span>
+                        <span class="counter-text">segundos</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSCA -->
+        <section class="search-section">
+
+            <div class="search-wrapper">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Pesquisar uma memória..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- TIMELINE -->
+        <section class="timeline-section">
+
+            <div class="timeline-heading">
+
+                <span class="section-label">nossos momentos</span>
+
+                <h2>Onde tudo começou...</h2>
+
+                <p>
+                    Cada data guarda uma pequena parte da nossa história.
+                </p>
+
+            </div>
+
+            <div id="memories-container"></div>
+
+        </section>
+
+
+        <!-- MENSAGEM FINAL -->
+        <section class="final-message">
+
+            <h2>E essa história ainda está sendo escrita. 💙</h2>
+
+            <p>
+                Que venham muitos outros momentos para guardar.
+            </p>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
         <footer>
-            Feito com todo o carinho do mundo de Alane para Victor. <br>
-            <span>Para sempre nós dois. 💙</span>
+
+            <p>Feito com carinho por Alane 💙</p>
+
         </footer>
+
+    </main>
+
+
+    <!-- MODAL -->
+    <div id="memory-modal">
+
+        <div class="modal-content">
+
+            <h2>Nova memória 💙</h2>
+
+            <form id="memory-form">
+
+                <input
+                    type="text"
+                    id="mem-date"
+                    placeholder="Data (ex: 20/06)"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="mem-title"
+                    placeholder="Título da memória"
+                    required
+                >
+
+                <textarea
+                    id="mem-desc"
+                    placeholder="Conte um pouquinho sobre esse momento..."
+                    required
+                ></textarea>
+
+                <div class="modal-buttons">
+
+                    <button type="submit">
+                        Adicionar
+                    </button>
+
+                    <button
+                        type="button"
+                        id="close-modal-btn"
+                    >
+                        Cancelar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
     </div>
 
-    <script src="JS/script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
